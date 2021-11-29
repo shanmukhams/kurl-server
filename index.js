@@ -3,6 +3,8 @@ const app = express();
 
 
 const logger = require('./services/startup/logging');
+
+app.get('/', (req,res)=>{res.send('its working')})
 // require('./services/startup/db');
 // require('./services/startup/routes')(app);
 
