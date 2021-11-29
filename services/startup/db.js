@@ -3,7 +3,14 @@ const config = require('config');
 const Sequelize = require("sequelize");
 const db = config.get('db');
 
-const sequelize = new Sequelize(db);
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false
+    }
+  }
+})
 
 sequelize
   .authenticate()
