@@ -8,6 +8,7 @@ const logger = require('../startup/logging');
 
 router.get('/', async (req, res) => {
   kurl = req.query.kurl
+  // Get corresponding long url
   Url.findByPk(kurl).then((data) => {
     dbres = data.dataValues;
     console.log(dbres)

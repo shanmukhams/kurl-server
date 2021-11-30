@@ -53,3 +53,59 @@ info: Nov-29-2021 23:21:56: 	success
 info: Nov-29-2021 23:22:52: 	Listening on port 3000...
 info: Nov-29-2021 23:22:52: 	Connection has been established successfully.
 info: Nov-29-2021 23:22:52: 	success
+info: Nov-30-2021 04:27:22: 	Listening on port 3000...
+error: Nov-30-2021 04:27:22: 	Unable to connect to the database: The server does not support SSL connections
+error: Nov-30-2021 04:27:22: 	undefined
+info: Nov-30-2021 04:27:34: 	Listening on port 3000...
+info: Nov-30-2021 04:27:35: 	Connection has been established successfully.
+info: Nov-30-2021 04:27:35: 	success
+info: Nov-30-2021 04:48:18: 	Listening on port 3000...
+info: Nov-30-2021 04:48:18: 	Connection has been established successfully.
+info: Nov-30-2021 04:48:18: 	success
+info: Nov-30-2021 04:57:47: 	Listening on port 3000...
+info: Nov-30-2021 04:57:48: 	Connection has been established successfully.
+info: Nov-30-2021 04:57:48: 	success
+info: Nov-30-2021 04:58:41: 	Listening on port 3000...
+info: Nov-30-2021 04:58:41: 	Connection has been established successfully.
+info: Nov-30-2021 04:58:41: 	success
+info: Nov-30-2021 05:13:35: 	Listening on port 3000...
+info: Nov-30-2021 05:13:35: 	Connection has been established successfully.
+info: Nov-30-2021 05:13:35: 	success
+info: Nov-30-2021 05:14:33: 	Listening on port 3000...
+info: Nov-30-2021 05:14:33: 	Connection has been established successfully.
+info: Nov-30-2021 05:14:33: 	success
+info: Nov-30-2021 05:20:24: 	Listening on port 3000...
+info: Nov-30-2021 05:20:24: 	Connection has been established successfully.
+info: Nov-30-2021 05:20:24: 	success
+info: Nov-30-2021 05:21:40: 	Listening on port 3000...
+info: Nov-30-2021 05:21:40: 	Connection has been established successfully.
+info: Nov-30-2021 05:21:40: 	success
+info: Nov-30-2021 05:22:10: 	Listening on port 3000...
+info: Nov-30-2021 05:22:10: 	Connection has been established successfully.
+info: Nov-30-2021 05:22:10: 	success
+info: Nov-30-2021 05:22:49: 	Listening on port 3000...
+info: Nov-30-2021 05:22:49: 	Connection has been established successfully.
+info: Nov-30-2021 05:22:49: 	success
+info: Nov-30-2021 05:23:46: 	Listening on port 3000...
+info: Nov-30-2021 05:23:46: 	Connection has been established successfully.
+info: Nov-30-2021 05:23:46: 	success
+info: Nov-30-2021 05:24:47: 	Listening on port 3000...
+info: Nov-30-2021 05:24:47: 	Connection has been established successfully.
+info: Nov-30-2021 05:24:47: 	success
+info: Nov-30-2021 05:24:47: 	identical kurl is generated for https://medicalsciences.stackexchange.com/questions/29345/why-arent-leg-amputations-usually-done-right-at-the-knee-joint-turkey-leg-sty kurlMDJiZj1
+info: Nov-30-2021 05:25:25: 	identical kurl is generated for https://www.google.com/search?gs_ssp=eJzj4tDP1TdIKzG0MGD04kpOLE5MyknMS04EAEelBs8&q=casablanca&oq=casa&aqs=chrome.1.69i57j46i67l2j0i512j46i512j46i199i465i512j46i175i199i512j46i512j46i175i199i512j0i271.4048j0j1&sourceid=chrome&ie=UTF-8 kurlMDJiZj12
+info: Nov-30-2021 05:25:57: 	identical kurl is generated for https://www.theguardian.com/tv-and-radio/2021/nov/29/succession-recap-series-three-episode-seven-kendalls-party-is-well-and-truly-pooped kurlMDJiZj123
+info: Nov-30-2021 05:28:09: 	Listening on port 3000...
+info: Nov-30-2021 05:28:09: 	Connection has been established successfully.
+info: Nov-30-2021 05:28:09: 	success
+info: Nov-30-2021 05:28:24: 	identical kurl is generated for https://www.google.com/search?q=bfs%2Fdfs+problem&rlz=1C1WHAR_deDE941DE941&oq=bfs%2Fdfs+problem&aqs=chrome..69i57j0i22i30l2j0i390l3j69i58.530j0j1&sourceid=chrome&ie=UTF-8 kurlMDJiZj2
+info: Nov-30-2021 05:28:39: 	identical kurl is generated for https://www.geeksforgeeks.org/top-10-interview-question-depth-first-search-dfs/ kurlMDJiZj3
+info: Nov-30-2021 05:30:50: 	Listening on port 3000...
+info: Nov-30-2021 05:30:50: 	Connection has been established successfully.
+info: Nov-30-2021 05:30:50: 	success
+info: Nov-30-2021 05:31:04: 	Listening on port 3000...
+info: Nov-30-2021 05:31:05: 	Connection has been established successfully.
+info: Nov-30-2021 05:31:05: 	success
+info: Nov-30-2021 05:31:08: 	Listening on port 3000...
+info: Nov-30-2021 05:31:08: 	Connection has been established successfully.
+info: Nov-30-2021 05:31:08: 	success

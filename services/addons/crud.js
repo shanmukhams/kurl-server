@@ -27,19 +27,17 @@ module.exports = {
     },
 
     GroupbyTime: async function(url, action){
-      console.log("hi")
       var re = await Log.findAll({
-        attributes:[[Sequelize.fn('date_trunc', 'hour', Sequelize.col('createdAt')),'datetime'],
+        attributes:[[Sequelize.fn('date_trunc', 'day', Sequelize.col('createdAt')),'datetime'],
                     [Sequelize.fn('count', Sequelize.col('kurl')), 'count'],
-                    [Sequelize.literal('date(date_trunc(\'hour\', "createdAt"))'), 'date']],
+                    [Sequelize.literal('date(date_trunc(\'day\', "createdAt"))'), 'date']],
         where:{
           kurl: url,
           action:action
         },
-        group: [Sequelize.fn('date_trunc', 'hour', Sequelize.col('createdAt'))]
+        group: [Sequelize.fn('date_trunc', 'day', Sequelize.col('createdAt'))]
       })
      
-      console.log(re);
       return re
   
     },

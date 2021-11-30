@@ -20,16 +20,20 @@ router.post('/', async (req, res) => {
   // decode buffer as Base64
   const base64 = buff.toString('base64');
 
-  // print Base64 string
-  char7base64 = base64.substring(0,6)
+  //Base64 string
+  char7base64 = base64.substring(0,7)
+  
 
   try{
+    // checking kurl is present and if not it inserts the row
     const [url, created] = await Url.findOrCreate({
       where: { lurl: lurl },
       defaults: {
         kurl: char7base64
       }
     });
+
+    // if a new row is created, then it saves to log with action creation otherwise getkurl
     if (created) {
       LogCrud.Insert({lurl:lurl,kurl:char7base64, action:'creation'})
     }
@@ -39,16 +43,23 @@ router.post('/', async (req, res) => {
 
     res.send(url);
   }
-
+  
   catch(error){
+    //if a identical kurl is generated for different long url, then adding a new char to kurl then storing.
+    // Do this until you get unique kurl
     if(error.name == "SequelizeUniqueConstraintError"){
       var counter = 1
+      var dbinsert = true
+      kurl = char7base64
       while(dbinsert == true){
-        kurl = kurl+counter.toString()
+        kurl_v = kurl+counter.toString()
         try{
-          const url = await Url.create({ lurl: lurl, kurl: kurl, extraChar: counter.toString()});
+          const url = await Url.create({ lurl: lurl, kurl: kurl_v, extraChar: counter.toString()});
           dbinsert = false
-          LogCrud.Insert({lurl:lurl,kurl:char7base64, action:'creation'})
+          console.log('hi...')
+          console.log('identical kurl is generated for '+lurl+' kurl'+kurl_v)
+          logger.info('identical kurl is generated for '+lurl+' kurl'+kurl_v)
+          LogCrud.Insert({lurl:lurl,kurl:kurl_v, action:'creation'})
 
           res.send(url);
         }

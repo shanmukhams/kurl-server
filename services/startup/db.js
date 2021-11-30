@@ -3,6 +3,7 @@ const config = require('config');
 const Sequelize = require("sequelize");
 const db = config.get('db');
 
+//process.env.DATABASE_URL
 const sequelize = new Sequelize(process.env.DATABASE_URL, {
   dialectOptions: {
     ssl: {

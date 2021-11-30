@@ -6,7 +6,7 @@ const logger = require('../startup/logging');
 
 router.get('/lurl/:kurl', async (req, res) => {
   kurl = req.params.kurl
-
+  // Total number of hits for a particular kurl
   try{
     count = await LogCrud.Groupbyurl(kurl, 'getkurl')
     res.send({count:count})
@@ -26,7 +26,7 @@ router.get('/lurl/:kurl', async (req, res) => {
 router.get('/kurl/:kurl', async (req, res) => {
     kurl = req.params.kurl
     
-
+    // Number of times same lurl is used to convert to kurl
     try{
       count = await LogCrud.Groupbyurl(kurl, 'getlurl')
       res.send({count:count})
@@ -46,7 +46,7 @@ router.get('/kurl/ts/:kurl', async (req, res) => {
     
 
     try{
-      agg = await LogCrud.GroupbyTime(kurl, 'getkurl')
+      agg = await LogCrud.GroupbyTime(kurl, 'getlurl')
       res.send({agg:agg})
     }
   
